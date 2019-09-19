@@ -1,8 +1,12 @@
 apply plugin: 'com.android.application'
 
-def config=rootProject.ext.config
+def config = rootProject.ext.config
 android {
-
+    ext {
+        config = [
+                appName: "常服务",
+        ]
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "cn.segi.demo.mvp"
